@@ -1,0 +1,4 @@
+C:\Users\laubr\OneDrive\Bureau\SI4_S8\SOC\Projet\WPS_JCDecaux\obj\Debug\netcoreapp1.0\WPS_JCDecaux.csprojAssemblyReference.cache
+C:\Users\laubr\OneDrive\Bureau\SI4_S8\SOC\Projet\WPS_JCDecaux\obj\Debug\netcoreapp1.0\WPS_JCDecaux.AssemblyInfoInputs.cache
+C:\Users\laubr\OneDrive\Bureau\SI4_S8\SOC\Projet\WPS_JCDecaux\obj\Debug\netcoreapp1.0\WPS_JCDecaux.AssemblyInfo.cs
+C:\Users\laubr\OneDrive\Bureau\SI4_S8\SOC\Projet\WPS_JCDecaux\obj\Debug\netcoreapp1.0\WPS_JCDecaux.csproj.CoreCompileInputs.cache

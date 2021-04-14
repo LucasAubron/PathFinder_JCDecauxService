@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "WPS_JCDecaux/1.0.0": {
+        "dependencies": {
+          "System.Runtime.Caching": "4.0.0.0"
+        },
+        "runtime": {
+          "WPS_JCDecaux.dll": {}
+        }
+      },
+      "System.Runtime.Caching/4.0.0.0": {
+        "runtime": {
+          "System.Runtime.Caching.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.7.3062.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WPS_JCDecaux/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Runtime.Caching/4.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
