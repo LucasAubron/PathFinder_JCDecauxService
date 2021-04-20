@@ -55,8 +55,7 @@ namespace Routing
                 endingCoordinate[0], endingCoordinate[1]
                 ));
             return JsonSerializer.Serialize<List<Path>>(res);
-
         }
-
     }
 }
+

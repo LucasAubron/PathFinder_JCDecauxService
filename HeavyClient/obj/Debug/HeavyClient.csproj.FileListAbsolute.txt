@@ -1,0 +1,7 @@
+C:\Users\laubr\OneDrive\Bureau\PathFinder_JCDecauxService\HeavyClient\bin\Debug\HeavyClient.exe.config
+C:\Users\laubr\OneDrive\Bureau\PathFinder_JCDecauxService\HeavyClient\bin\Debug\HeavyClient.exe
+C:\Users\laubr\OneDrive\Bureau\PathFinder_JCDecauxService\HeavyClient\bin\Debug\HeavyClient.pdb
+C:\Users\laubr\OneDrive\Bureau\PathFinder_JCDecauxService\HeavyClient\obj\Debug\HeavyClient.csprojAssemblyReference.cache
+C:\Users\laubr\OneDrive\Bureau\PathFinder_JCDecauxService\HeavyClient\obj\Debug\HeavyClient.csproj.CoreCompileInputs.cache
+C:\Users\laubr\OneDrive\Bureau\PathFinder_JCDecauxService\HeavyClient\obj\Debug\HeavyClient.exe
+C:\Users\laubr\OneDrive\Bureau\PathFinder_JCDecauxService\HeavyClient\obj\Debug\HeavyClient.pdb
