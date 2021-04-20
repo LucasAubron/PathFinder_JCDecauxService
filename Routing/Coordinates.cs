@@ -80,8 +80,7 @@ namespace Routing
         public string name { get; set; }
         public string housenumber { get; set; }
         public string street { get; set; }
-        public string postalcode { get; set; }
-        public int confidence { get; set; }
+        public float confidence { get; set; }
         public string match_type { get; set; }
         public string accuracy { get; set; }
         public string country { get; set; }
