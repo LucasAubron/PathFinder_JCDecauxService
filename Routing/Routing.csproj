@@ -75,6 +75,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="Contract.cs" />
     <Compile Include="Coordinates.cs" />
     <Compile Include="IRoutingService.cs" />
     <Compile Include="JCDecauxWPSClient.cs" />
@@ -83,6 +84,7 @@
     <Compile Include="RoutingService.cs" />
     <Compile Include="Station.cs" />
     <Compile Include="StationProximity.cs" />
+    <Compile Include="StationStatus.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -102,9 +104,6 @@
     <WCFMetadataStorage Include="Connected Services\WPS_JCDecaux\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\WPS_JCDecaux\item.disco" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Connected Services\WPS_JCDecaux\configuration91.svcinfo" />
   </ItemGroup>
   <ItemGroup>
@@ -121,6 +120,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\WPS_JCDecaux\item.disco" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

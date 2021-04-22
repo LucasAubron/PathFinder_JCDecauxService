@@ -21,15 +21,19 @@ namespace Routing
 
         public string GetPaths(string startingPos, string endingPos)
         {
-            // Try it with (for example):
-            //string startingPos = "80 Boulevard Françoise Duparc, 13004 Marseille, France";
-            //string endingPos = "2 Grand Rue, 13002 Marseille, France";
+
             Uri u1 = new Uri("http://www.somesite.com?" + startingPos);
             Uri u2 = new Uri("http://www.somesite.com?" + endingPos);
             startingPos = u1.ToString().Split('?')[1];
             endingPos = u2.ToString().Split('?')[1];
             float[] startingCoordinate = openRouteServiceClient.AddressToCoordinate(startingPos);
             float[] endingCoordinate = openRouteServiceClient.AddressToCoordinate(endingPos);
+
+            if (startingCoordinate==null || endingCoordinate == null)
+            {
+                return "404 - Address cannot be located";
+            }
+
             Station startingStation = jcdClient.NearestStationAvailableForPickUp(startingCoordinate[0], startingCoordinate[1]);
             Station endingStation = jcdClient.NearestStationAvailableForDeposit(endingCoordinate[0], endingCoordinate[1]);
             List<Path> res = new List<Path>();
@@ -55,6 +59,22 @@ namespace Routing
                 endingCoordinate[0], endingCoordinate[1]
                 ));
             return JsonSerializer.Serialize<List<Path>>(res);
+        }
+
+        public string GetStationStatus(string contract, int number)
+        {
+            StationStatus res = jcdClient.GetStationStatus(contract, number);
+            return JsonSerializer.Serialize<StationStatus>(res);
+        }
+
+        public string GetContracts()
+        {
+            return JsonSerializer.Serialize<Contract[]>(this.jcdClient.GetContracts());
+        }
+
+        public string GetStationsStatusFromContract(string contract)
+        {
+            return JsonSerializer.Serialize<StationStatus[]>(this.jcdClient.GetStationsStatusFromContract(contract));
         }
     }
 }

@@ -24,7 +24,14 @@ namespace Routing
                 response.EnsureSuccessStatusCode();
                 responseBody = await response.Content.ReadAsStringAsync();
             });
-            waitForCoordinates.Wait();
+            try
+            {
+                waitForCoordinates.Wait();
+            }
+            catch (Exception e)
+            {
+                return null;
+            }
             Coordinates coordinates = JsonSerializer.Deserialize<Coordinates>(responseBody);
             float[] res = coordinates.features[0].geometry.coordinates;
             Array.Reverse(res);

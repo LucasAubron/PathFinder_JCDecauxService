@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.31105.61
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Routing", "Routing.csproj", "{2F70A1A7-B6D3-4858-AA6B-8C67E1B5037D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SelfHost", "SelfHost\SelfHost.csproj", "{D6E15333-6EEB-465D-A7CC-00D496D85311}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{2F70A1A7-B6D3-4858-AA6B-8C67E1B5037D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2F70A1A7-B6D3-4858-AA6B-8C67E1B5037D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2F70A1A7-B6D3-4858-AA6B-8C67E1B5037D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6E15333-6EEB-465D-A7CC-00D496D85311}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6E15333-6EEB-465D-A7CC-00D496D85311}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6E15333-6EEB-465D-A7CC-00D496D85311}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6E15333-6EEB-465D-A7CC-00D496D85311}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

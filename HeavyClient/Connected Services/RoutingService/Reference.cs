@@ -20,6 +20,24 @@ namespace HeavyClient.RoutingService {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRoutingService/GetPaths", ReplyAction="http://tempuri.org/IRoutingService/GetPathsResponse")]
         System.Threading.Tasks.Task<string> GetPathsAsync(string startingPos, string endingPos);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRoutingService/GetStationStatus", ReplyAction="http://tempuri.org/IRoutingService/GetStationStatusResponse")]
+        string GetStationStatus(string contract, int number);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRoutingService/GetStationStatus", ReplyAction="http://tempuri.org/IRoutingService/GetStationStatusResponse")]
+        System.Threading.Tasks.Task<string> GetStationStatusAsync(string contract, int number);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRoutingService/GetContracts", ReplyAction="http://tempuri.org/IRoutingService/GetContractsResponse")]
+        string GetContracts();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRoutingService/GetContracts", ReplyAction="http://tempuri.org/IRoutingService/GetContractsResponse")]
+        System.Threading.Tasks.Task<string> GetContractsAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRoutingService/GetStationsStatusFromContract", ReplyAction="http://tempuri.org/IRoutingService/GetStationsStatusFromContractResponse")]
+        string GetStationsStatusFromContract(string contract);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRoutingService/GetStationsStatusFromContract", ReplyAction="http://tempuri.org/IRoutingService/GetStationsStatusFromContractResponse")]
+        System.Threading.Tasks.Task<string> GetStationsStatusFromContractAsync(string contract);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -55,6 +73,30 @@ namespace HeavyClient.RoutingService {
         
         public System.Threading.Tasks.Task<string> GetPathsAsync(string startingPos, string endingPos) {
             return base.Channel.GetPathsAsync(startingPos, endingPos);
+        }
+        
+        public string GetStationStatus(string contract, int number) {
+            return base.Channel.GetStationStatus(contract, number);
+        }
+        
+        public System.Threading.Tasks.Task<string> GetStationStatusAsync(string contract, int number) {
+            return base.Channel.GetStationStatusAsync(contract, number);
+        }
+        
+        public string GetContracts() {
+            return base.Channel.GetContracts();
+        }
+        
+        public System.Threading.Tasks.Task<string> GetContractsAsync() {
+            return base.Channel.GetContractsAsync();
+        }
+        
+        public string GetStationsStatusFromContract(string contract) {
+            return base.Channel.GetStationsStatusFromContract(contract);
+        }
+        
+        public System.Threading.Tasks.Task<string> GetStationsStatusFromContractAsync(string contract) {
+            return base.Channel.GetStationsStatusFromContractAsync(contract);
         }
     }
 }
